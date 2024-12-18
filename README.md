@@ -12,6 +12,13 @@ print(df_excel.info())
 
 
 
+import pandas as pd
+
+data = {'Имя': ['Ivan', 'Ania', 'Sergey', 'lyosha'],
+        'Возраст': [25, 30, 22, 28]}
+df = pd.DataFrame(data)
+
+print(df.tail(2))
 
 
 
