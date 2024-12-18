@@ -16,8 +16,16 @@ print(df_excel.info())
 
 
 
-data = {'Имя': ['Nikita', 'Alina', 'Sirgey', 'lyonya'],
-        'Возраст': [25, 30, 22, 28]}
+
+import pandas as pd
+
+data = {
+    'Имя': ['Nikita', 'Kostya', 'Alina', 'lyohya'],
+    'Возраст': [18, 37, 21, 24],
+    'Город': ['Moscow', 'Saint-Petersburg', 'Novosibirsk', 'Krasnoyarsk']
+}
 df = pd.DataFrame(data)
 
-print(df.tail(2))
+selected_columns = ['Имя', 'Город']
+result_df = df[selected_columns]
+print(result_df)
